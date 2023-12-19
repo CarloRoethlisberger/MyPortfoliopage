@@ -8,10 +8,8 @@
 
 </head>
 <body>
-    <header>
-        <h1>My portfolio</h1>
-    </header>
 
+    <button class="rounded-button">Contact me</button>
 
     <div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
         <a href="#about">About Me</a>
@@ -22,6 +20,9 @@
         <a href="#contact">Contact</a>
     </div>
     
+    <div class="content" [style.marginLeft]="isSidebarExpanded ? '250px' : '0'">
+    </div>
+
 
     <div class="container" id="about">
         <img src="/assets/test.jpg" alt="image" style="border-radius: 50%; width: 150px; height: 150px; float: left; margin-right: 20px;">

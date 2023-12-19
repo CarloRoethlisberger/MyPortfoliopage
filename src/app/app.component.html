@@ -15,7 +15,41 @@
             margin: -10px;
             padding: 50px;
         }
+        
+        .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
 
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 16px;
+}
+
+.content {
+    margin-left: 270px; /* Adjusted to accommodate the sidebar */
+    padding: 16px;
+}
+        
         /* For small screens (e.g., mobile devices) */
         @media (max-width: 768px) {
         html, body {
@@ -23,13 +57,14 @@
         background-attachment: scroll; /* Allow background image to scroll with content */
         }
 
+        
         .container {
         padding: 10px; /* Adjust padding for smaller screens */
         }
-
+        
         /* Add more specific styling for smaller screens as needed */
         }
-
+        
         header {
             background-color: #cabe15;
             color: #fff;
@@ -37,31 +72,31 @@
             padding: 20px;
             border-radius: 20px;
         }
-
+        
         h1 {
             margin: 0;
         }
-
+        
         nav {
             margin-top: 20px;
         }
-
+        
         nav ul {
             list-style-type: none;
             padding: 0;
         }
-
+        
         nav li {
             display: inline;
             margin-right: 20px;
         }
-
+        
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
         }
-
+        
         .project {
             background-color: #fff;
             padding: 20px;
@@ -69,15 +104,16 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
+        
         .project h2 {
             color: #333;
         }
-
+        
         .project p {
             color: #666;
         }
-    </style>
+        </style>
+
 </head>
 <body>
     <header>
@@ -90,6 +126,14 @@
             </ul>
         </nav>
     </header>
+
+
+    <div class="sidebar">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+    
 
     <div class="container" id="about">
         <img src="/assets/test.jpg" alt="image" style="border-radius: 50%; width: 150px; height: 150px; float: left; margin-right: 20px;">
@@ -115,13 +159,19 @@
             <h2>Work experience</h2>
             <p>09/2021 – Heute Berner Fachhochschule,
                 Studiengang Wirtschaftsinformatik</p>
-            <p>09/2020 – 032020 BKW Energie AG, Bern
+
+            <p>09/2020 – 03/2023 BKW Energie AG, Bern
                 IT-Support 1st/2nd Level
                 • On-Site User Support
                 • MS Intune
                 • MDM
                 • O365 Support
                 • AD/ Entra ID (AAD)</p>
+
+            <p>03/2023 - Today</p>
+            <p>BKE Energie AG, Bern</p>
+            <p>Workplace Engineer</p>
+                
         </div>
     </div>
 

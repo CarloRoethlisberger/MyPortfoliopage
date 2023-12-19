@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MyPortfolioPage';
+  isSidebarExpanded = false;
+
+  expandSidebar() {
+    this.isSidebarExpanded = true;
+  }
+
+  collapseSidebar() {
+    this.isSidebarExpanded = false;
+  }
 }

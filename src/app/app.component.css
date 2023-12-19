@@ -10,7 +10,7 @@
             padding: 50px;
         }
         
-        .sidebar {
+    .sidebar {
     height: 100%;
     width: 250px;
     position: fixed;
@@ -19,6 +19,15 @@
     background-color: #111;
     padding-top: 20px;
     overflow-x: hidden;
+    
+    width: 50px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.sidebar.expanded {
+    /* styles for expanded state */
+    width: 250px;
 }
 
 .sidebar a {
@@ -29,6 +38,8 @@
     display: block;
     transition: 0.3s;
 }
+
+
 
 .sidebar a:hover {
     background-color: #555;

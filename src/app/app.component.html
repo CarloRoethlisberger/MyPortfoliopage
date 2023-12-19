@@ -6,25 +6,20 @@
     <title>My online CV</title>
     <link rel="stylesheet" type="text/css" href="app.component.css">
 
-
 </head>
 <body>
     <header>
-        <h1>My online CV</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>My portfolio</h1>
     </header>
 
 
-    <div class="sidebar">
+    <div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
         <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact Me</a>
+        <a href="#skills">My work experience</a>
+        <a href="#contact">Education</a>
+        <a href="#contact">My skillsets</a>
+        <a href="#contact">Certifactes</a>
+        <a href="#contact">Contact</a>
     </div>
     
 

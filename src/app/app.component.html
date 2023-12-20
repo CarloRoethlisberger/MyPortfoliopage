@@ -17,8 +17,8 @@
  <div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
     <a href="#about"><i class="fas fa-user"></i> <span class="sidebar-text">About Me</span></a>
     <a href="#skills"><i class="fa-solid fa-briefcase"></i> <span class="sidebar-text">My Work Experience</span></a>
-    <a href="#contact"><i class="fas fa-graduation-cap"></i> <span class="sidebar-text">Education</span></a>
     <a href="#contact"><i class="fas fa-code"></i> <span class="sidebar-text">My Skillsets</span></a>
+    <a href="#contact"><i class="fas fa-graduation-cap"></i> <span class="sidebar-text">Education</span></a>
     <a href="#contact"><i class="fas fa-certificate"></i> <span class="sidebar-text">Certificates</span></a>
     <a href="#contact"><i class="fas fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
 </div>
@@ -27,19 +27,27 @@
     </div>
 
 
-    <div class="container" id="about">
-        <img src="/assets/test.jpg" alt="image" style="border-radius: 50%; width: 150px; height: 150px; float: left; margin-right: 20px;">
+    <div class="container" id="about" style="margin-bottom: 100px; margin-top: 100px">
+        <img src="/assets/Profilbild.png" alt="image" style="border-radius: 10%; width: 140px; height: 210px; float: left; margin-right: 20px;">
         <h2 style="color: white;">About Me</h2>
         <p style="color: white;">👋 Hello! I'm Carlo, 
             a passionate and dedicated IT professional with a focus on enhancing workplace technology. 
-            As a Workplace Engineer, I thrive on the opportunity to create seamless and efficient IT environments that empower businesses and individuals to excel.
+            I'm currently working as a workplace admin and engineer. 
+            I thrive on the opportunity to create seamless and efficient IT environments that empower businesses and individuals to excel.
         </p>
     </div>
 
-    <div class="container" id="My skills">
-        <h2 style="color: white;">Skills</h2>
+
+    <div class="container" >
         <div class="project">
-            <h2>Technologies</h2>
+            <h2>My work experience</h2>
+            <p>SBB</p>
+            <p>09/2020 – 03/2023 BKW Energie AG, Bern,  IT-Support 1st/2nd </p>
+            <p>Workpalce Admininistration and Engineering</p>
+        </div>
+
+        <div class="project">
+            <h2>My tech skills</h2>
             <p>Microsoft Intune</p>
             <p>Microsoft Entra ID</p>
             <p>AD</p>
@@ -48,23 +56,26 @@
         </div>
 
         <div class="project">
-            <h2>Work experience</h2>
-            <p>09/2021 – Heute Berner Fachhochschule,
-                Studiengang Wirtschaftsinformatik</p>
-
-            <p>09/2020 – 03/2023 BKW Energie AG, Bern
-                IT-Support 1st/2nd Level
-                • On-Site User Support
-                • MS Intune
-                • MDM
-                • O365 Support
-                • AD/ Entra ID (AAD)</p>
-
-            <p>03/2023 - Today</p>
-            <p>BKE Energie AG, Bern</p>
-            <p>Workplace Engineer</p>
-                
+            <h2>Education</h2>
+            <p>Microsoft Intune</p>
+            <p>Microsoft Entra ID</p>
+            <p>AD</p>
+            <p>Microsoft 365</p>
+            <p>PowerShell</p>
         </div>
+
+
+        <div class="project">
+            <h2>Cerificates</h2>
+            <p>Microsoft Intune</p>
+            <p>Microsoft Entra ID</p>
+            <p>AD</p>
+            <p>Microsoft 365</p>
+            <p>PowerShell</p>
+        </div>
+
+
+
     </div>
 
     <div class="container" id="contact">

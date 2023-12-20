@@ -18,10 +18,11 @@
 
  <div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
     <a href="#about"><i class="fas fa-user"></i> <span class="sidebar-text">About Me</span></a>
-    <a href="#skills"><i class="fa-solid fa-briefcase"></i> <span class="sidebar-text">My Work Experience</span></a>
-    <a href="#contact"><i class="fas fa-code"></i> <span class="sidebar-text">My Skillsets</span></a>
-    <a href="#contact"><i class="fas fa-graduation-cap"></i> <span class="sidebar-text">Education</span></a>
-    <a href="#contact"><i class="fas fa-certificate"></i> <span class="sidebar-text">Certificates</span></a>
+    <a href="#work"><i class="fa-solid fa-briefcase"></i> <span class="sidebar-text">My Work Experience</span></a>
+    <a href="#skills"><i class="fas fa-code"></i> <span class="sidebar-text">My Skillsets</span></a>
+    <a href="#education"><i class="fas fa-graduation-cap"></i> <span class="sidebar-text">Education</span></a>
+    <a href="#language"><i class="fas fa-language"></i> <span class="sidebar-text">Language</span></a>
+    <a href="#certs"><i class="fas fa-certificate"></i> <span class="sidebar-text">Certificates</span></a>
     <a href="#contact"><i class="fas fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
 </div>
     
@@ -41,14 +42,14 @@
 
 
     <div class="container" >
-        <div class="project">
+        <div class="project" id="work">
             <h2>My work experience</h2>
             <p>SBB</p>
             <p>09/2020 – 03/2023 BKW Energie AG, Bern,  IT-Support 1st/2nd </p>
             <p>Workpalce Admininistration and Engineering</p>
         </div>
 
-        <div class="project">
+        <div class="project" id="skills">
             <h2>My tech skills</h2>
             <p>Microsoft Intune</p>
             <p>Microsoft Entra ID</p>
@@ -57,7 +58,7 @@
             <p>PowerShell</p>
         </div>
 
-        <div class="project">
+        <div class="project" id="education">
             <h2>Education</h2>
             <p>Microsoft Intune</p>
             <p>Microsoft Entra ID</p>
@@ -66,8 +67,20 @@
             <p>PowerShell</p>
         </div>
 
+        <div class="project" id="languages">
+            <h2>Languages</h2>
+            <p>German - Mother tounge</p>
+            <p>Englisch - Fluently written and spoken</p>
+            <p>French - Understand and speaking, written with simple vocabulary</p>
+            <p>HTML - Beginner</p>
+            <p>CSS - Beginner</p>
+            <p>PowerShell - Intermediate</p>
+            <p>Python - Beginner</p>
+            <p>TypeScript - Beginner</p>
+        </div>
 
-        <div class="project">
+
+        <div class="project" id="certs">
             <h2>Certificates</h2>
             <p>Microsoft Intune</p>
             <p>Microsoft Entra ID</p>

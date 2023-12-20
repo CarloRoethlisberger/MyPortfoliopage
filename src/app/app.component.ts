@@ -15,4 +15,6 @@ export class AppComponent {
   collapseSidebar() {
     this.isSidebarExpanded = false;
   }
+
+
 }

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My online CV</title>
     <link rel="stylesheet" type="text/css" href="app.component.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     
 
@@ -15,14 +14,14 @@
 
     <button class="rounded-button">Contact me</button>
 
-    <div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
-        <a href="#about"><i class="fas fa-user"></i> About Me</a>
-        <a href="#skills"><i class="fa-solid fa-briefcase"></i> My Work Experience</a>
-        <a href="#contact"><i class="fas fa-graduation-cap"></i> Education</a>
-        <a href="#contact"><i class="fas fa-code"></i> My Skillsets</a>
-        <a href="#contact"><i class="fas fa-certificate"></i> Certificates</a>
-        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-    </div>
+ <div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
+    <a href="#about"><i class="fas fa-user"></i> <span class="sidebar-text">About Me</span></a>
+    <a href="#skills"><i class="fa-solid fa-briefcase"></i> <span class="sidebar-text">My Work Experience</span></a>
+    <a href="#contact"><i class="fas fa-graduation-cap"></i> <span class="sidebar-text">Education</span></a>
+    <a href="#contact"><i class="fas fa-code"></i> <span class="sidebar-text">My Skillsets</span></a>
+    <a href="#contact"><i class="fas fa-certificate"></i> <span class="sidebar-text">Certificates</span></a>
+    <a href="#contact"><i class="fas fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
+</div>
     
     <div class="content" [style.marginLeft]="isSidebarExpanded ? '250px' : '0'">
     </div>

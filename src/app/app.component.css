@@ -47,11 +47,10 @@
     
     width: 50px;
     overflow: hidden;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 }
 
 .sidebar.expanded {
-    /* styles for expanded state */
     width: 250px;
 }
 
@@ -61,18 +60,25 @@
     font-size: 18px;
     color: rgb(255, 255, 255);
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
 }
-
 
 
 .sidebar a:hover {
     background-color: #555;
 }
 
-.content {
-    margin-left: 250px;
-    padding: 16px;
+.sidebar .sidebar-text {
+    display: none;
+}
+
+.sidebar .sidebar-text {
+    display: none;
+}
+
+.sidebar.expanded .sidebar-text {
+    display: inline;
+    margin-left: 10px; /* Adjust the margin as needed */
 }
 
 .content {

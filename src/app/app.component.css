@@ -89,20 +89,7 @@
     padding: 16px;
 }
         
-        /* For small screens (e.g., mobile devices) */
-        @media (max-width: 768px) {
-        html, body {
-        padding: 0;
-        background-attachment: scroll; /* Allow background image to scroll with content */
-        }
 
-        
-        .container {
-        padding: 10px; /* Adjust padding for smaller screens */
-        }
-        
-        /* Add more specific styling for smaller screens as needed */
-        }
         
 
         
@@ -144,5 +131,53 @@
         
         .project p {
             color: #666;
+        }
+
+
+        @media (max-width: 768px) {
+            html, body {
+                padding: 0;
+                background-attachment: scroll; /* Allow background image to scroll with content */
+            }
+        
+            .sidebar {
+                width: 100%; /* Make the sidebar take full width */
+                height: auto;
+            }
+        
+            .sidebar.expanded {
+                width: 100%; /* Make sure expanded sidebar takes full width */
+            }
+        
+            .sidebar a {
+                font-size: 16px; /* Adjust font size for better readability */
+                padding: 10px;
+            }
+        
+            .sidebar.expanded .sidebar-text {
+                display: block; /* Show text in the expanded sidebar */
+                margin-left: 0; /* Remove the margin */
+            }
+        
+            .content {
+                margin-left: 0; /* Adjust margin for content */
+                padding: 16px;
+            }
+        
+            .container {
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+        
+            .rounded-button {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin: 20px auto; /* Center the button */
+                display: block; /* Ensure it's a block-level element */
+            }
+        
+            .project {
+                padding: 10px; /* Adjust padding for projects */
+            }
         }
        

@@ -2,13 +2,16 @@
 
         html, body {
             height: 100%;
-            font-family: Arial, sans-serif;
+            font-family: 'Times', sans-serif; 
             background-image: url('../assets/Background.jpg'); /* Set the background image URL */
             background-size: cover; /* Scale the image to cover the entire viewport */
             background-repeat: no-repeat; /* Prevent the image from repeating */
             background-attachment: fixed; /* Fixed background, doesn't scroll with content */
             margin: -10px;
             padding: -10px;
+            
+            
+            
         }
         
 

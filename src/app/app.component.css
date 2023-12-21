@@ -1,5 +1,31 @@
 @import "~@fortawesome/fontawesome-free/css/all.css";
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
+.starging_page {
+    margin-bottom: 200px;
+    margin-top: 100px;
+    text-align: center;
+    animation: fadeIn 5s ease-out;
+}
+
+h1, p, img {
+    opacity: 0; /* Set initial opacity to 0 */
+}
+
+h1, p {
+    animation: fadeIn 5s ease-out forwards; /* Apply animation to heading and paragraph */
+}
+
+img {
+    animation: fadeIn 3s ease-out 0.5s forwards; /* Delay image animation for 0.5s */
+}
         html, body {
             height: 100%;
             font-family: 'Times', sans-serif; 

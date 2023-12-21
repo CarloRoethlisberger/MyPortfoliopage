@@ -17,29 +17,29 @@
     <button class="rounded-button">Contact me</button>
 
  <div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
-    <a href="#about"><i class="fas fa-user"></i> <span class="sidebar-text">About Me</span></a>
-    <a href="#work"><i class="fa-solid fa-briefcase"></i> <span class="sidebar-text">My Work Experience</span></a>
-    <a href="#skills"><i class="fas fa-code"></i> <span class="sidebar-text">My Skillsets</span></a>
-    <a href="#education"><i class="fas fa-graduation-cap"></i> <span class="sidebar-text">Education</span></a>
-    <a href="#language"><i class="fas fa-language"></i> <span class="sidebar-text">Language</span></a>
-    <a href="#certs"><i class="fas fa-certificate"></i> <span class="sidebar-text">Certificates</span></a>
-    <a href="#contact"><i class="fas fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
+    <a (click)="smoothScrollToElement('about')"><i class="fas fa-user"></i> <span class="sidebar-text">About Me</span></a>
+    <a (click)="smoothScrollToElement('work')"><i class="fa-solid fa-briefcase"></i> <span class="sidebar-text">My Work Experience</span></a>
+    <a (click)="smoothScrollToElement('skills')"><i class="fas fa-code"></i> <span class="sidebar-text">My Skillsets</span></a>
+    <a (click)="smoothScrollToElement('education')"><i class="fas fa-graduation-cap"></i> <span class="sidebar-text">Education</span></a>
+    <a (click)="smoothScrollToElement('language')"><i class="fas fa-language"></i> <span class="sidebar-text">Language</span></a>
+    <a (click)="smoothScrollToElement('certs')"><i class="fas fa-certificate"></i> <span class="sidebar-text">Certificates</span></a>
+    <a (click)="smoothScrollToElement('contact')"><i class="fas fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
 </div>
     
     <div class="content" [style.marginLeft]="isSidebarExpanded ? '250px' : '0'">
     </div>
 
 
-    <div class="container" id="about" style="margin-bottom: 2000px; margin-top: 100px">
-        <img src="/assets/Profilbild.png" alt="image" style="border-radius: 10%; width: 140px; height: 210px; float: left; margin-right: 20px;">
-        <h1 style="color: white;">About Me</h1>
-        <p style="color: white;">👋 Hello! I'm Carlo, 
+    <div class="starting_page" id="about" style="max-width: 800px; margin: 0 auto; margin-bottom: 200px; margin-top: 100px; text-align: center;">
+        <h1 style="color: white; font-size: 48px; border-radius: 15px;">Welcome to my online CV</h1>
+        <p style="color: white; font-size: 32px; border-radius: 15px;">Hello! </p>
+        <p style="color: white; font-size: 32px; border-radius: 15px;">I'm Carlo, 
             a passionate and dedicated IT professional with a focus on enhancing workplace technology. 
             I'm currently working as a workplace admin and engineer. 
             I thrive on the opportunity to create seamless and efficient IT environments that empower businesses and individuals to excel.
         </p>
+        <img src="/assets/Profilbild.png" alt="image" style="border-radius: 10%; width: 400px; height: 600px; margin-top: 20px;">
     </div>
-
 
     <div class="container" >
         <div class="project" id="work">

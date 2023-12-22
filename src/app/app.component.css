@@ -248,9 +248,8 @@ img {
             }
         
             .container {
-                width: 95%; /* Make the container full width on smaller screens */
-                margin: 0; /* Remove the margin to make it go close to the edge */
-                padding: 20px;
+                width: 100%; /* Make the container full width on smaller screens */
+                
             }
             
             .sidebar {
@@ -258,10 +257,8 @@ img {
             }
         
             .project {
-                width: 95%; /* Make the project box full width on smaller screens */
-                margin: 20px 0;
-                padding: 20px;
-                border-radius: 5px;
+                width: 100%; /* Make the project box full width on smaller screens */
+                
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             }
           

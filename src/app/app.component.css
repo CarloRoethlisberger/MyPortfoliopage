@@ -207,10 +207,13 @@ img {
         }
 
 
+        /* Media Query for smaller screens --------------------------------------------------------------------------------------------------------------------- */
         @media screen and (max-width: 800px) {
             
             html, body {
                 background-image: url('../assets/mobile_background.jpg'); /* Set the mobile background image URL */
+                margin: 0;
+                padding: 0;
             }
             
             
@@ -218,12 +221,12 @@ img {
             /* Adjust font size for text in the starting_page section */
             .starting_page h1 {
                 font-size: 10px;
-                margin-left: 20px;
+                margin-left: auto;
             }
         
             .starting_page p {
-                font-size: 8px;
-                margin-left: 20px;
+                font-size: 5px;
+                margin-left: auto;
             }
         
         

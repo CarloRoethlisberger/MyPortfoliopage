@@ -184,7 +184,7 @@ img {
             /* Remove the background image for better readability */
             html, body {
                 background-image: none;
-                background-color: #fff; /* Set a background color for better contrast */
+                background-color: #ffffff; /* Set a background color for better contrast */
             }
         }
         

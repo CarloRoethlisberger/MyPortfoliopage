@@ -78,7 +78,7 @@ img {
 
 
     .sidebar {
-    height: 33%;
+    height: 100%;
     width: 250px;
     position: fixed;
     top: 0;
@@ -192,7 +192,7 @@ img {
         }
 
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 800px) {
             
             html, body {
                 background-image: url('../assets/mobile_background.jpg'); /* Set the mobile background image URL */
@@ -219,18 +219,7 @@ img {
             }
         
             .sidebar {
-                height: 33%;
-                width: 50px;
-                position: fixed;
-                top: 0;
-                left: 0;
-                background-color: #e46b08;
-                padding-top: 20px;
-                overflow-x: hidden;
-                
-                width: 50px;
-                overflow: hidden;
-                transition: width 0.5s ease;
+                display: none; /* Hide the sidebar on mobile */
             }
 
         }

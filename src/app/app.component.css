@@ -163,51 +163,55 @@ img {
         @media (max-width: 768px) {
             html, body {
                 padding: 0;
-                background-attachment: scroll; /* Allow background image to scroll with content */
+                background-attachment: scroll;
             }
         
             .sidebar {
-                width: 100%; /* Make the sidebar take full width */
+                width: 100%;
                 height: auto;
-                overflow-x: hidden; /* Hide horizontal scrollbar */
+                overflow-x: hidden;
+                position: static; /* Change position to static */
             }
         
             .sidebar.expanded {
-                width: 100%; /* Make sure expanded sidebar takes full width */
+                width: 100%;
             }
         
             .sidebar a {
-                font-size: 16px; /* Adjust font size for better readability */
+                font-size: 16px;
                 padding: 10px;
+                display: block; /* Display links as block elements */
+                text-align: center; /* Center the text */
             }
         
             .sidebar.expanded .sidebar-text {
-                display: block; /* Show text in the expanded sidebar */
-                margin-left: 0; /* Remove the margin */
+                display: block;
+                margin-left: 0;
             }
         
             .content {
-                margin-left: 0; /* Adjust margin for content */
+                margin-left: 0;
                 padding: 16px;
             }
         
             .container {
-                padding: 10px; /* Adjust padding for smaller screens */
+                padding: 10px;
             }
         
             .rounded-button {
                 position: relative;
                 top: 0;
                 right: 0;
-                margin: 20px auto; /* Center the button */
-                display: block; /* Ensure it's a block-level element */
+                margin: 20px auto;
+                display: block;
             }
         
             .project {
-                padding: 10px; /* Adjust padding for projects */
+                padding: 10px;
             }
         
             .starting_page {
-                margin-top: 50px; /* Adjust margin on the starting page for better spacing */
+                margin-top: 50px;
             }
+        
         }

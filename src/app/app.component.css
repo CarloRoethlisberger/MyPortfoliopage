@@ -163,11 +163,11 @@ img {
         @media screen and (max-width: 600px) {
             /* Adjust font size for text in the starting_page section */
             .starting_page h1 {
-                font-size: 24px;
-            }
-            
-            .starting_page p {
                 font-size: 16px;
+            }
+        
+            .starting_page p {
+                font-size: 12px;
             }
         
             /* Remove the sidebar */
@@ -175,11 +175,19 @@ img {
                 display: none;
             }
         
-            /* Adjust the content margin to fill the full width */
+            /* Adjust the content margin to fill the full width and add some margin */
             .content {
+                margin: 20px; /* Adjust the margin as needed */
                 margin-left: 0;
             }
+        
+            /* Remove the background image for better readability */
+            html, body {
+                background-image: none;
+                background-color: #fff; /* Set a background color for better contrast */
+            }
         }
+        
         
         
         

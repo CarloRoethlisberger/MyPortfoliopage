@@ -249,6 +249,8 @@ img {
         
             .container {
                 width: 100%; /* Make the container full width on smaller screens */
+                margin: 0px;
+                padding: 0px;
                 
             }
             
@@ -258,8 +260,9 @@ img {
         
             .project {
                 width: 100%; /* Make the project box full width on smaller screens */
+                margin: 0px;
+                padding: 0px;
                 
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             }
           
         

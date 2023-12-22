@@ -160,7 +160,26 @@ img {
         }
 
 
-  
+        @media screen and (max-width: 600px) {
+            /* Adjust font size for text in the starting_page section */
+            .starting_page h1 {
+                font-size: 24px;
+            }
+            
+            .starting_page p {
+                font-size: 16px;
+            }
+        
+            /* Remove the sidebar */
+            .sidebar {
+                display: none;
+            }
+        
+            /* Adjust the content margin to fill the full width */
+            .content {
+                margin-left: 0;
+            }
+        }
         
         
         

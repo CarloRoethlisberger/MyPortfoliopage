@@ -160,58 +160,7 @@ img {
         }
 
 
-        @media (max-width: 768px) {
-            html, body {
-                padding: 0;
-                background-attachment: scroll;
-            }
+  
         
-            .sidebar {
-                width: 100%;
-                height: auto;
-                overflow-x: hidden;
-                position: static;
-                display: flex; /* Use flexbox */
-                justify-content: space-around; /* Space icons evenly */
-                align-items: center; /* Center icons vertically */
-            }
-        
-            .sidebar a {
-                font-size: 0; /* Hide text by setting font-size to 0 */
-                padding: 10px;
-                display: block;
-                text-align: center;
-            }
-        
-            .sidebar.expanded .sidebar-text {
-                display: block;
-                margin-left: 0;
-            }
-        
-            .content {
-                margin-left: 0;
-                padding: 16px;
-            }
-        
-            .container {
-                padding: 10px;
-            }
-        
-            .rounded-button {
-                position: relative;
-                top: 0;
-                right: 0;
-                margin: 20px auto;
-                display: block;
-            }
-        
-            .project {
-                padding: 10px;
-            }
-        
-            .starting_page {
-                margin-top: 50px;
-            }
-        }
         
         

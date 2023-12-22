@@ -212,8 +212,8 @@ img {
             
             html, body {
                 background-image: url('../assets/mobile_background.jpg'); /* Set the mobile background image URL */
-                margin: 0;
-                padding: 0;
+                margin: -10px;
+                padding: -10px;
             }
             
             

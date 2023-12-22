@@ -242,6 +242,7 @@
                 text-align: center; /* Center the text on smaller screens */
                 margin-left: auto;
                 margin-right: auto;
+                font-size: 15px;
             }
             
             .starting_page img {

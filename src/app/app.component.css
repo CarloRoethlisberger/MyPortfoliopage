@@ -238,10 +238,10 @@
             }
             
             .starting_page p {
-                font-size: 15px;
-                border-radius: 15px;
-                margin: 0 auto; /* Add this line to center the text */
-                margin-bottom: 50px;
+                max-width: 80%; /* Adjust the percentage as needed */
+                text-align: center; /* Center the text on smaller screens */
+                margin-left: auto;
+                margin-right: auto;
             }
             
             .starting_page img {

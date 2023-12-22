@@ -219,7 +219,7 @@ img {
         /* Media Query for smaller screens --------------------------------------------------------------------------------------------------------------------- */
         @media (max-width: 768px) {
             html, body {
-                height: 100%;
+                
                 background-image: url('../assets/mobile_background.jpg'); /* Set the background image URL */
             }
 

@@ -219,51 +219,12 @@ img {
         /* Media Query for smaller screens --------------------------------------------------------------------------------------------------------------------- */
         @media screen and (max-width: 600px) {
             
+          
             html, body {
-                height: 100%;
-                font-family: 'Times', sans-serif; 
-                background-image: url('../assets/mobile_background.jpg'); /* Set the background image URL */
-            }
-        
-            .starting_page h1 {
-                font-size: 20px;
-                border-radius: 15px;
-                margin-bottom: 50px;
-                margin-top: 50px;
-            }
-            
-            .starting_page p {
-                font-size: 15px;
-                border-radius: 15px;
-                max-width: 500px;
-                margin: 0 auto; /* Add this line to center the text */
-                margin-bottom: 50px;
-            }
-            
-            .starting_page img {
-                border-radius: 10%; 
-                width: 200px; 
-                height: 300px; 
-                margin-top: 20px;
-            }
-        
-            .container {
-                width: 100%; /* Make the container full width on smaller screens */
-                margin: 0px;
-                padding: 0px;
-                
-            }
-            
-            .sidebar {
-                display: none;
-            }
-        
-            .project {
-                width: 100%; /* Make the project box full width on smaller screens */
-                margin: 0px;
-                padding: 0px;
-                
-            }
+                padding: 0;
+                background-attachment: scroll;
+                background-image: url('../assets/mobile_background.jpg'); 
+                }
           
         
             

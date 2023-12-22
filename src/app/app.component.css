@@ -248,7 +248,7 @@ img {
             }
         
             .container {
-                max-width: 100%; /* Adjusted to make it full width on smaller screens */
+                width: 95%; /* Make the container full width on smaller screens */
                 margin: 0; /* Remove the margin to make it go close to the edge */
                 padding: 20px;
             }
@@ -258,7 +258,7 @@ img {
             }
         
             .project {
-                max-width: 100%; /* Adjusted to make it full width on smaller screens */
+                width: 95%; /* Make the project box full width on smaller screens */
                 margin: 20px 0;
                 padding: 20px;
                 border-radius: 5px;

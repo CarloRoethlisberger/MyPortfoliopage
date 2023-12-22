@@ -232,29 +232,7 @@ img {
             }
 
             
-             .starting_page h1 {
-                font-size: 20px;
-                border-radius: 15px;
-                margin-bottom: 50px;
-                margin-top: 50px;
-            }
-
             
-            .starting_page p {
-                font-size: 15px;
-                border-radius: 15px;
-                max-width: 500px;
-                
-                margin-bottom: 50px;
-            }
-
-            
-            .starting_page img {
-                border-radius: 10%; 
-                width: 200px; 
-                height: 300px; 
-                margin-top: 20px;
-            }
 
             
 

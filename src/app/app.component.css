@@ -220,11 +220,16 @@ img {
         @media screen and (max-width: 600px) {
             
           
-        html, body {
-            padding: 0;
-             background-attachment: scroll;
-            background-image: url('../assets/mobile_background.jpg'); 
-             }
+            html, body {
+                height: 100%;
+                font-family: 'Times', sans-serif; 
+                background-image: url('../assets/mobile_background.jpg'); /* Set the background image URL */
+            }
+
+
+            .sidebar {
+                display: none;
+            }
 
             
              .starting_page h1 {

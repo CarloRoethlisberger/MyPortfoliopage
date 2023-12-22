@@ -219,12 +219,12 @@ img {
         /* Media Query for smaller screens --------------------------------------------------------------------------------------------------------------------- */
         @media screen and (max-width: 600px) {
             
-        html, body {
-            height: 100%;
-            font-family: 'Times', sans-serif; 
-            background-image: url('../assets/mobile_background.jpg'); /* Set the background image URL */
+            html, body {
+                height: 100%;
+                font-family: 'Times', sans-serif; 
+                background-image: url('../assets/mobile_background.jpg'); /* Set the background image URL */
             }
-
+        
             .starting_page h1 {
                 font-size: 20px;
                 border-radius: 15px;
@@ -240,22 +240,29 @@ img {
                 margin-bottom: 50px;
             }
             
-            .starting_page img{
+            .starting_page img {
                 border-radius: 10%; 
                 width: 200px; 
                 height: 300px; 
                 margin-top: 20px;
             }
-
+        
             .container {
-                max-width: 500px;
-                margin: 0 auto;
+                max-width: 100%; /* Adjusted to make it full width on smaller screens */
+                margin: 0; /* Remove the margin to make it go close to the edge */
                 padding: 20px;
             }
             
-            
             .sidebar {
-              display: none;
+                display: none;
+            }
+        
+            .project {
+                max-width: 100%; /* Adjusted to make it full width on smaller screens */
+                margin: 20px 0;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             }
           
         

@@ -220,13 +220,37 @@ img {
         @media screen and (max-width: 600px) {
             
           
-            html, body {
-                padding: 0;
-                background-attachment: scroll;
-                background-image: url('../assets/mobile_background.jpg'); 
-                }
-          
-        
+        html, body {
+            padding: 0;
+             background-attachment: scroll;
+            background-image: url('../assets/mobile_background.jpg'); 
+             }
+
+            
+             .starting_page h1 {
+                font-size: 20px;
+                border-radius: 15px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+            }
+
+            
+            .starting_page p {
+                font-size: 15px;
+                border-radius: 15px;
+                max-width: 500px;
+                margin: 0 auto; /* Add this line to center the text */
+                margin-bottom: 50px;
+            }
+
+            
+            .starting_page img {
+                border-radius: 10%; 
+                width: 200px; 
+                height: 300px; 
+                margin-top: 20px;
+            }
+
             
 
         }

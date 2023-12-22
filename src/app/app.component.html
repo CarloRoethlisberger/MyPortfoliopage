@@ -6,10 +6,19 @@
         <title>My online CV</title>
         <link rel="stylesheet" type="text/css" href="app.component.css"> <!-- Link to app.component.css -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap"> <!-- Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     </head>
 
 
 <body>
+
+
+    <div class="social-icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+
 
     <!-- Button in the top right corner ------------------------------------------------------------------------------------------------------------------------->
     <button class="rounded-button">Contact me</button>
@@ -45,7 +54,7 @@
     <!-- Sections --------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="container" >
         <div class="project" id="work">
-            <h2>My work experience</h2>
+            <h2> <i class="fa-solid fa-briefcase"></i>  My work experience</h2>
             <p>03/2023 - Today, Workpalce Admininistration and Engineering</p>
             <p>09/2020 – 03/2023 BKW Energie AG, Bern,  IT-Support 1st/2nd </p>
             <p>09/2019 – 12/2019:SBB AG Informatik, Bern, Junior Projektassistent</p>
@@ -53,7 +62,7 @@
         </div>
 
         <div class="project" id="skills">
-            <h2>My tech skills</h2>
+            <h2><i class="fas fa-code"></i>  My tech skills</h2>
             <p>Microsoft Intune (Client-Management, Policies, Automation, Security, Application-Deployment)</p>
             <p>Microsoft Entra ID (AzureAD, RBAC)</p>
             <p>On-Premises AD</p>
@@ -65,14 +74,14 @@
         </div>
 
         <div class="project" id="education">
-            <h2>Education</h2>
+            <h2><i class="fas fa-graduation-cap"></i>  Education</h2>
             <p>2021 - Today: Bachelor of Science Wirtschaftsinformatik</p>
             <p>EFZ Kaufmann</p>
             
         </div>
 
         <div class="project" id="languages">
-            <h2>Languages</h2>
+            <h2><i class="fas fa-language"></i>  Languages</h2>
             <p>German - Mother tounge</p>
             <p>Englisch - Fluently written and spoken</p>
             <p>French - Understand and speaking, written with simple vocabulary</p>
@@ -85,14 +94,23 @@
 
 
         <div class="project" id="certs">
-            <h2>Certificates</h2>
-            <p>AZ900: Azure Fundamentals</p>
-            
+            <h2><i class="fas fa-certificate"></i>  Certificates</h2>
+            <div class="certificate-box">
+                <p>AZ900: Azure Fundamentals</p>
+                <div class="certificate-content">
+                    <img src="/assets/AZ900_Badge.png" alt="image" class="certificate-image">
+                </div>
+            </div>
+            <p>
+                <a href="https://learn.microsoft.com/de-ch/users/carlorthlisberger-4847/transcript/7k1x4cj52m2m10w" target="_blank">
+                    MS Certificates Transcript
+                </a>
+            </p>
         </div>
 
 
         <div class="project" id="licenses">
-            <h2>Driving Licenses</h2>
+            <h2><i class="fas fa-car"></i>  Driving Licenses</h2>
             <p>Kat. B</p>
             <p>Kat. BE</p>
             <p>Kat. C1</p>
@@ -104,9 +122,8 @@
           <!-- Contact --------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="project" id="contact">
-        <h2>Driving Licenses</h2>
+        <h2><i class="fas fa-envelope"></i>  Contanct me</h2>
         <p>You can reach me at carlo.roethlisberger@gmail.com</p>
-        <button class="rounded-button">Contact me</button>
     </div>
     </div>
 

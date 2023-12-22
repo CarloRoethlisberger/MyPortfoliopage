@@ -41,7 +41,20 @@ img {
         }
         
 
+        .social-icons {
+            position: fixed;
+            top: 20px;
+            right: 150px; /* Adjust this value to position the icons accordingly */
+            display: flex;
+            align-items: center;
+        }
 
+        .social-icons i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #e46b08; /* Adjust the color to match your button */
+            cursor: pointer;
+        }
 
 
 
@@ -157,6 +170,25 @@ img {
         
         .project p {
             color: #666;
+        }
+
+
+        .certificate-box {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            overflow: hidden;
+            margin-bottom: 20px; /* Adjust as needed */
+        }
+        
+        .certificate-content {
+            display: flex;
+            align-items: center;
+        }
+        
+        .certificate-image {
+            max-width: 100px; /* Adjust the size as needed */
+            margin-right: 10px; /* Adjust the spacing between image and text as needed */
         }
 
 

@@ -6,64 +6,70 @@
     to {
         opacity: 1;
     }
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Times', sans-serif; 
-    background-image: url('../assets/Background.jpg'); /* Set the background image URL */
-    background-size: cover; /* Scale the image to cover the entire viewport */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-attachment: fixed; /* Fixed background, doesn't scroll with content */
-    margin: -10px;
-    padding: 50px;
-    overflow-x: hidden;
-
-}
+    }
 
 
-.starting_page {
-    text-align: center;
-    color: white;
-}
+         /* Styling of page for desktop resolutions --------------------------------------------------------------------------------------------------------------------- */
 
-.starting_page h1 {
-    font-size: 48px;
-    border-radius: 15px;
-    margin-bottom: 100px;
-    margin-top: 30px;
-}
+        html, body {
+            height: 100%;
+            font-family: 'Times', sans-serif; 
+            background-image: url('../assets/Background.jpg'); /* Set the background image URL */
+            background-size: cover; /* Scale the image to cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-attachment: fixed; /* Fixed background, doesn't scroll with content */
+            margin: -10px;
+            padding: 50px;
+            overflow-x: hidden;
 
-.starting_page p {
-    font-size: 32px;
-    border-radius: 15px;
-    max-width: 800px;
-    margin: 0 auto; /* Add this line to center the text */
-    margin-bottom: 50px;
-}
+        }
 
-.starting_page img{
-    border-radius: 10%; 
-    width: 400px; 
-    height: 600px; 
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+        /* Starting page --------------------------------------------------------------------------------------------------------------------- */
 
+        .starting_page {
+            text-align: center;
+            color: white;
+        }
 
-h1, p, img {
-    opacity: 0; /* Set initial opacity to 0 */
-}
+        .starting_page h1 {
+            font-size: 48px;
+            border-radius: 15px;
+            margin-bottom: 100px;
+            margin-top: 30px;
+        }
 
-h1, p {
-    animation: fadeIn 5s ease-out forwards; /* Apply animation to heading and paragraph */
-}
+        .starting_page p {
+            font-size: 32px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 0 auto; /* Add this line to center the text */
+            margin-bottom: 50px;
+        }
 
-img {
-    animation: fadeIn 3s ease-out 0.5s forwards; /* Delay image animation for 0.5s */
-}
+        .starting_page img{
+            border-radius: 10%; 
+            width: 400px; 
+            height: 600px; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Fade-in effect --------------------------------------------------------------------------------------------------------------------- */
+
+        h1, p, img {
+            opacity: 0; /* Set initial opacity to 0 */
+        }
+
+        h1, p {
+            animation: fadeIn 5s ease-out forwards; /* Apply animation to heading and paragraph */
+        }
+
+        img {
+            animation: fadeIn 3s ease-out 0.5s forwards; /* Delay image animation for 0.5s */
+        }
         
         
+        /* Social media icons in top right corner --------------------------------------------------------------------------------------------------------------------- */
 
         .social-icons {
             position: fixed;
@@ -80,6 +86,7 @@ img {
             cursor: pointer;
         }
 
+        /* button in top right corner --------------------------------------------------------------------------------------------------------------------- */
 
 
         .rounded-button {
@@ -100,61 +107,59 @@ img {
         }
 
 
+        /* Sidebar for desktop mode --------------------------------------------------------------------------------------------------------------------- */
 
-    .sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #e46b08;
-    padding-top: 20px;
-    overflow-x: hidden;
-    
-    width: 50px;
-    overflow: hidden;
-    transition: width 0.5s ease;
-}
-
-.sidebar.expanded {
-    width: 250px;
-}
-
-.sidebar a {
-    padding: 15px;
-    text-decoration: none;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    display: block;
-    transition: 0.5s;
-}
-
-
-.sidebar a:hover {
-    background-color: #555;
-}
-
-.sidebar .sidebar-text {
-    display: none;
-}
-
-.sidebar .sidebar-text {
-    display: none;
-}
-
-.sidebar.expanded .sidebar-text {
-    display: inline;
-    margin-left: 10px; /* Adjust the margin as needed */
-}
-
-.content {
-    margin-left: 270px; /* Adjusted to accommodate the sidebar */
-    padding: 16px;
-}
+        .sidebar {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #e46b08;
+        padding-top: 20px;
+        overflow-x: hidden;
         
+        width: 50px;
+        overflow: hidden;
+        transition: width 0.5s ease;
+            }
 
-        
+        .sidebar.expanded {
+            width: 250px;
+        }
 
+        .sidebar a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            display: block;
+            transition: 0.5s;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        .sidebar .sidebar-text {
+            display: none;
+        }
+
+        .sidebar .sidebar-text {
+            display: none;
+        }
+
+        .sidebar.expanded .sidebar-text {
+            display: inline;
+            margin-left: 10px; /* Adjust the margin as needed */
+        }
+
+        /* General styling of content and sections --------------------------------------------------------------------------------------------------------------------- */
+
+        .content {
+            margin-left: 270px; /* Adjusted to accommodate the sidebar */
+            padding: 16px;
+        }
         
         h1 {
             margin: 0;
@@ -235,7 +240,6 @@ img {
             .starting_page p {
                 font-size: 15px;
                 border-radius: 15px;
-                max-width: 500px;
                 margin: 0 auto; /* Add this line to center the text */
                 margin-bottom: 50px;
             }

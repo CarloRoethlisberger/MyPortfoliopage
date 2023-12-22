@@ -215,17 +215,15 @@ img {
 
 
         /* Media Query for smaller screens --------------------------------------------------------------------------------------------------------------------- */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 600px) {
             
         html, body {
             height: 100%;
             font-family: 'Times', sans-serif; 
-            background-image: url('../assets/Background.jpg'); /* Set the background image URL */
+            background-image: url('../assets/mobile_background.jpg'); /* Set the background image URL */
             background-size: cover; /* Scale the image to cover the entire viewport */
             background-repeat: no-repeat; /* Prevent the image from repeating */
             background-attachment: fixed; /* Fixed background, doesn't scroll with content */
-            margin: -10px;
-            padding: 50px;
             }
             
             

@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My online CV</title>
-    <link rel="stylesheet" type="text/css" href="app.component.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My online CV</title>
+        <link rel="stylesheet" type="text/css" href="app.component.css"> <!-- Link to app.component.css -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap"> <!-- Fonts -->
+    </head>
 
 
-    
-
-
-</head>
 <body>
 
+    <!-- Button in the top right corner ------------------------------------------------------------------------------------------------------------------------->
     <button class="rounded-button">Contact me</button>
 
- <div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
-    <a (click)="smoothScrollToElement('about')"><i class="fas fa-user"></i> <span class="sidebar-text">About Me</span></a>
-    <a (click)="smoothScrollToElement('work')"><i class="fa-solid fa-briefcase"></i> <span class="sidebar-text">My Work Experience</span></a>
-    <a (click)="smoothScrollToElement('skills')"><i class="fas fa-code"></i> <span class="sidebar-text">My Skillsets</span></a>
-    <a (click)="smoothScrollToElement('education')"><i class="fas fa-graduation-cap"></i> <span class="sidebar-text">Education</span></a>
-    <a (click)="smoothScrollToElement('language')"><i class="fas fa-language"></i> <span class="sidebar-text">Language</span></a>
-    <a (click)="smoothScrollToElement('certs')"><i class="fas fa-certificate"></i> <span class="sidebar-text">Certificates</span></a>
-    <a (click)="smoothScrollToElement('contact')"><i class="fas fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
-</div>
-    
-    <div class="content" [style.marginLeft]="isSidebarExpanded ? '250px' : '0'">
+
+    <!-- Sidebar ------------------------------------------------------------------------------------------------------------------------------------------------>
+    <div class="sidebar" [ngClass]="{'expanded': isSidebarExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
+        <a (click)="smoothScrollToElement('about')"><i class="fas fa-user"></i> <span class="sidebar-text">About Me</span></a>
+        <a (click)="smoothScrollToElement('work')"><i class="fa-solid fa-briefcase"></i> <span class="sidebar-text">My Work Experience</span></a>
+        <a (click)="smoothScrollToElement('skills')"><i class="fas fa-code"></i> <span class="sidebar-text">My Skillsets</span></a>
+        <a (click)="smoothScrollToElement('education')"><i class="fas fa-graduation-cap"></i> <span class="sidebar-text">Education</span></a>
+        <a (click)="smoothScrollToElement('languages')"><i class="fas fa-language"></i> <span class="sidebar-text">Language</span></a>
+        <a (click)="smoothScrollToElement('certs')"><i class="fas fa-certificate"></i> <span class="sidebar-text">Certificates</span></a>
+        <a (click)="smoothScrollToElement('licenses')"><i class="fas fa-car"></i> <span class="sidebar-text">Driving Licenses</span></a>
+        <a (click)="smoothScrollToElement('contact')"><i class="fas fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
     </div>
+    
+    <div class="content" [style.marginLeft]="isSidebarExpanded ? '250px' : '0'"> </div>
 
-
+    <!-- Starting Section -------------------------------------------------------------------------------------------------------------------------------------->
     <div class="starting_page" id="about" style="max-width: 800px; margin: 0 auto; margin-bottom: 200px; margin-top: 100px; text-align: center;">
         <h1 style="color: white; font-size: 48px; border-radius: 15px;">Welcome to my online CV</h1>
-        <p style="color: white; font-size: 32px; border-radius: 15px;">Hello! </p>
-        <p style="color: white; font-size: 32px; border-radius: 15px;">I'm Carlo, 
-            a passionate and dedicated IT professional with a focus on enhancing workplace technology. 
-            I'm currently working as a workplace admin and engineer. 
-            I thrive on the opportunity to create seamless and efficient IT environments that empower businesses and individuals to excel.
-        </p>
-        <img src="/assets/Profilbild.png" alt="image" style="border-radius: 10%; width: 400px; height: 600px; margin-top: 20px;">
+            <p style="color: white; font-size: 32px; border-radius: 15px;">Hello! </p>
+            <p style="color: white; font-size: 32px; border-radius: 15px;">
+                I'm Carlo, 
+                a passionate and dedicated IT professional with a focus on enhancing workplace technology. 
+                I'm currently working as a workplace admin and engineer. 
+                I thrive on the opportunity to create seamless and efficient IT environments that empower businesses and individuals to excel.
+            </p>
+            <img src="/assets/Profilbild.png" alt="image" style="border-radius: 10%; width: 400px; height: 600px; margin-top: 20px;">
     </div>
 
+    <!-- Sections --------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="container" >
         <div class="project" id="work">
             <h2>My work experience</h2>
-            <p>SBB</p>
+            <p>03/2023 - Today, Workpalce Admininistration and Engineering</p>
             <p>09/2020 – 03/2023 BKW Energie AG, Bern,  IT-Support 1st/2nd </p>
-            <p>Workpalce Admininistration and Engineering</p>
+            <p>09/2019 – 12/2019:SBB AG Informatik, Bern, Junior Projektassistent</p>
+            <p>08/2018 – 07/2019: SBB AG Bildung, Bern, Praktikum Dienstleistung & Administration</p>
         </div>
 
         <div class="project" id="skills">
             <h2>My tech skills</h2>
-            <p>Microsoft Intune</p>
-            <p>Microsoft Entra ID</p>
-            <p>AD</p>
-            <p>Microsoft 365</p>
-            <p>PowerShell</p>
+            <p>Microsoft Intune (Client-Management, Policies, Automation, Security, Application-Deployment)</p>
+            <p>Microsoft Entra ID (AzureAD, RBAC)</p>
+            <p>On-Premises AD</p>
+            <p>Microsoft 365 (Exchange, Office-Suite) </p>
+            <p>Identiy (Contiational Access, MFA etc.) </p>
+            <p>PowerShell Scripting</p>
+            <p>Networking (Proxy, Firewall, VPN, DHCP...)</p>
+            <p>Printing</p>
         </div>
 
         <div class="project" id="education">
             <h2>Education</h2>
-            <p>Microsoft Intune</p>
-            <p>Microsoft Entra ID</p>
-            <p>AD</p>
-            <p>Microsoft 365</p>
-            <p>PowerShell</p>
+            <p>2021 - Today: Bachelor of Science Wirtschaftsinformatik</p>
+            <p>EFZ Kaufmann</p>
+            
         </div>
 
         <div class="project" id="languages">
@@ -82,16 +86,23 @@
 
         <div class="project" id="certs">
             <h2>Certificates</h2>
-            <p>Microsoft Intune</p>
-            <p>Microsoft Entra ID</p>
-            <p>AD</p>
-            <p>Microsoft 365</p>
-            <p>PowerShell</p>
+            <p>AZ900: Azure Fundamentals</p>
+            
         </div>
 
 
-
+        <div class="project" id="licenses">
+            <h2>Driving Licenses</h2>
+            <p>Kat. B</p>
+            <p>Kat. BE</p>
+            <p>Kat. C1</p>
+            <p>Kat. C1E</p>
+            
+        </div>
     </div>
+
+
+    <!-- Contact --------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="container" id="contact">
         <h2 style="color: white;">Contact Me</h2>

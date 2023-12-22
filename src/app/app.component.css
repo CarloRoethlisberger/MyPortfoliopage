@@ -170,18 +170,17 @@ img {
                 width: 100%;
                 height: auto;
                 overflow-x: hidden;
-                position: static; /* Change position to static */
-            }
-        
-            .sidebar.expanded {
-                width: 100%;
+                position: static;
+                display: flex; /* Use flexbox */
+                justify-content: space-around; /* Space icons evenly */
+                align-items: center; /* Center icons vertically */
             }
         
             .sidebar a {
-                font-size: 16px;
+                font-size: 0; /* Hide text by setting font-size to 0 */
                 padding: 10px;
-                display: block; /* Display links as block elements */
-                text-align: center; /* Center the text */
+                display: block;
+                text-align: center;
             }
         
             .sidebar.expanded .sidebar-text {
@@ -213,5 +212,6 @@ img {
             .starting_page {
                 margin-top: 50px;
             }
-        
         }
+        
+        

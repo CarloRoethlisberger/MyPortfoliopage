@@ -217,12 +217,10 @@ img {
 
 
         /* Media Query for smaller screens --------------------------------------------------------------------------------------------------------------------- */
-        @media screen and (max-width: 600px) {
-            
-          
+        @media (max-width: 768px) {
             html, body {
-                height: 100%;
-                font-family: 'Times', sans-serif; 
+                padding: 0;
+                background-attachment: scroll;
                 background-image: url('../assets/mobile_background.jpg'); /* Set the background image URL */
             }
 

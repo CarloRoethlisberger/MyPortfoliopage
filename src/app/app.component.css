@@ -219,8 +219,9 @@ img {
         /* Media Query for smaller screens --------------------------------------------------------------------------------------------------------------------- */
         @media (max-width: 768px) {
             html, body {
-                
+                background-attachment: scroll;
                 background-image: url('../assets/mobile_background.jpg'); /* Set the background image URL */
+                padding: 0;
             }
 
             
